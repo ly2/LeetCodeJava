@@ -50,12 +50,12 @@ public class SortArrayByParity905 {
         return x%2 == 0;
     }
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        int[] A = {3,1,2,4};
 //        int[] r = sortArrayByParity(A);
 //        for (int i : r) {
 //            System.out.println(i);
 //        }
-        System.out.println(0%2);
-    }
+//        System.out.println(0%2);
+//    }
 }
