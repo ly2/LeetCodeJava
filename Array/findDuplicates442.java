@@ -42,6 +42,24 @@ public class findDuplicates442 {
 
     }
 
+
+    //     O(N) Time | O (1) Space Best one
+//    public List<Integer> findDuplicates(int[] nums) {
+//        List<Integer> res = new ArrayList<>();
+//        if (nums == null) return res;
+//
+//        for (int i = 0; i < nums.length; i++) {
+//            int idx = Math.abs(nums[i]) - 1;
+//            if (nums[idx] < 0) res.add(Math.abs(nums[i]));
+//            else nums[idx] *= -1;
+//        }
+//
+//        for (int i = 0; i < nums.length; i++)
+//            nums[i] = Math.abs(nums[i]);
+//
+//        return res;
+//    }
+
 //  // or use a new array
     //3ms
     //49.1mb
@@ -70,6 +88,7 @@ public class findDuplicates442 {
 
 
 ////    Should read question firstly
+//      O(N Log N) Time | O(1) Space
 //    public List<Integer> findDuplicates(int[] nums) {
 //        int length = nums.length;
 //        List<Integer> result = new ArrayList<>(length);
