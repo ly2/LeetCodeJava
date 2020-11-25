@@ -11,6 +11,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Stack" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tree" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hash" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Heap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BinarySearch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Graph" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Divide and Conquer" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -34,5 +38,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="junit4" level="project" />
   </component>
 </module>
