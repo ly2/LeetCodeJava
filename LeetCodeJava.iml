@@ -15,6 +15,9 @@
       <sourceFolder url="file://$MODULE_DIR$/BinarySearch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Graph" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Divide and Conquer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backtracking" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DFS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BFS" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
