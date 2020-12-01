@@ -56,23 +56,23 @@ public class Triangle120 {
      * @param triangle
      * @return
      */
-//    public int minimumTotal(List<List<Integer>> triangle) {
-//        if (triangle.size() ==1)
-//            return triangle.get(0).get(0);
-//        int len = triangle.size();
-//        int[] sum = new int[len];
-//        for  (int i = 0; i < triangle.get(len-1).size(); i++) {
-//            sum[i] = triangle.get(len-1).get(i);
-//        }
-//
-//        for (int j = len-2; j >= 0; j--) {
-//            for (int k = 0; k < triangle.get(j).size(); k++) {
-//                sum[k] = Math.min(sum[k], sum[k+1]) + triangle.get(j).get(k);
-//            }
-//        }
-//
-//        return sum[0];
-//    }
+    public int minimumTotal2(List<List<Integer>> triangle) {
+        if (triangle.size() ==1)
+            return triangle.get(0).get(0);
+        int len = triangle.size();
+        int[] sum = new int[len];
+        for  (int i = 0; i < triangle.get(len-1).size(); i++) {
+            sum[i] = triangle.get(len-1).get(i);
+        }
+
+        for (int j = len-2; j >= 0; j--) {
+            for (int k = 0; k < triangle.get(j).size(); k++) {
+                sum[k] = Math.min(sum[k], sum[k+1]) + triangle.get(j).get(k);
+            }
+        }
+
+        return sum[0];
+    }
 
 
 
