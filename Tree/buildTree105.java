@@ -8,8 +8,14 @@ public class buildTree105 {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
@@ -38,17 +44,16 @@ public class buildTree105 {
 
         int index = inorder.indexOf(rootvalue);
 
-        List preright = preorder.subList(index+1, preorder.size());
-        List preleft = preorder.subList(1, index+1);
-        List inright = inorder.subList(index+1, preorder.size());
+        List preright = preorder.subList(index + 1, preorder.size());
+        List preleft = preorder.subList(1, index + 1);
+        List inright = inorder.subList(index + 1, preorder.size());
         List inleft = inorder.subList(0, index);
 
         TreeNode left = listbuildtree(preleft, inleft);
         TreeNode right = listbuildtree(preright, inright);
 
-        return new TreeNode(rootvalue, left,right);
+        return new TreeNode(rootvalue, left, right);
     }
-
 
 
     // same idea, but don't use the list, just use index
@@ -57,11 +62,11 @@ public class buildTree105 {
     }
 
     private TreeNode buildTree(int[] preorder, int[] inorder, int start, int end, int index) {
-        if(start > end) return null;
+        if (start > end) return null;
         TreeNode root = new TreeNode(preorder[index]);
 
         int inIndex = start;
-        while(preorder[index] != inorder[inIndex]) inIndex++;
+        while (preorder[index] != inorder[inIndex]) inIndex++;
 
         root.left = buildTree(preorder, inorder, start, inIndex - 1, index + 1);
         root.right = buildTree(preorder, inorder, inIndex + 1, end, index + inIndex - start + 1);
@@ -70,9 +75,9 @@ public class buildTree105 {
     }
 
 
-
     // smartest method
     static int in, pre;
+
     public static TreeNode buildTree3(int[] preorder, int[] inorder) {
         return buildTree(preorder, inorder, Integer.MAX_VALUE);
     }
@@ -96,7 +101,7 @@ public class buildTree105 {
 
 
     public static void main(String[] args) {
-        buildTree3(new int[]{3,9,20,15,7}, new int[]{9,3,15,20,7});
+        buildTree3(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
     }
 
 }
