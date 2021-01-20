@@ -42,6 +42,11 @@ public class isHappy202 {
         }
         return ans;
     }
+
+    // 0 ms	35.7 MB
+    // the first boolean is used to avoid termination of the first iteration
+    // slow and fast is uesed to iteration the cycle fast!
+    //
     public boolean isHappy2(int n) {
         int slow = n, fast = n;
         boolean first = true;
