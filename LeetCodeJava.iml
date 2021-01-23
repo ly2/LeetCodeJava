@@ -21,6 +21,8 @@
       <sourceFolder url="file://$MODULE_DIR$/normal" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/String" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Math" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Design" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sort" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
