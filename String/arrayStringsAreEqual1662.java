@@ -1,4 +1,5 @@
 public class arrayStringsAreEqual1662 {
+    // 0ms
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
 
         StringBuilder sb1 = new StringBuilder();
@@ -28,6 +29,7 @@ public class arrayStringsAreEqual1662 {
                 else
                     return false;
             }
+
 
         }
         if (i != chs.length)
