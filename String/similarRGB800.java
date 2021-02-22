@@ -66,6 +66,7 @@ public class similarRGB800 {
             int d2 = c2 - (Character.isDigit(c2) ? '0' : letterOffset);
             int val = 16 * d1 + d2;
 
+            // because all short-hand values (00,11,22,33...) in hexa are multiples of 17 in decimal (0,17,34, 51...).
             int best = val / 17 + (val % 17) / 9;
             char c = (char) (best + (best < 10 ? '0' : letterOffset));
             result.append(c).append(c);
