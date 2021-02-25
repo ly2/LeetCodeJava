@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class boldWords758 {
 
-    // original
+    // original  4ms
     public String boldWords(String[] words, String S) {
         int[] bolds = new int[S.length()+1];
         for (String w : words) {
